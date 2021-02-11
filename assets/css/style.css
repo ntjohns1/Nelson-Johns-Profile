@@ -1,4 +1,4 @@
-/* color scheme: 
+ /* color scheme:  
 h1 {
     color: #E7F0F3;
     color: #648AB1;
@@ -7,40 +7,93 @@ h1 {
     color: #121D32;
 }
 */
+
 * {
-    box-sizing: border-box;   
+    box-sizing: border-box;
+    scroll-behavior: smooth;   
 }
 
 body {
-  font-family: Arial;
+  font-family: sans-serif;
   margin: 0;
 }
 
 header {
+  border-style: solid;
+  border-width: 1px;
+  display: flex;
+  justify-content: space-between;
   padding: 40px;
   text-align: center;
-  background: #13293d;
-  color: #fff;
+  background: #121D32;
+  color: #E7F0F3;
 }
 
-nav {
+.links {
   display: flex;
-  background-color: #d8a47f;
+  margin: 10px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #648AB1;
+}
+
+nav li {
+  display: flex;
+  border-style: solid;
+  border-width: 1px;
 }
 
 nav a {
-  color: #13293d;
+  color: #E7F0F3;
   padding: 14px 20px;
   text-decoration: none;
   text-align: center;
 }
 
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: fit-content;
+}
+
+article {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 #headshot {
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 10px;
-    padding: 10px;
-    width: 20%;
-    justify: left;
-    flex: 0 0 400px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100%;
+  flex: 0 0 400px;
+}
+
+#horisoen h2 {
+  border-style: solid;
+  border-width: 1px;
+  padding: 5px;
+  text-align: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.work {
+  width: 50%;
+  flex: 0 0 400px;
+}
+
+footer {
+  display: flex;
+  align-items: flex-end;
+  border-style: solid;
+  border-width: 1px;
+
 }

@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+<!-- ToDo: refer to csstricks.com example to get responsive layout correct. -->
+<!-- For the layout: aside needs to come first inside main. then all objects to the right of the column need to be in one big parent container. refer to first example on css tricks to figure out how to get one box to disply out of row. Also refer to 06 from advanced CCs, it has a similar layout. -->
   <head>
     <title>Nelson Johns</title>
     <meta charset="UTF-8" />
@@ -13,32 +16,45 @@
         <h1>Nelson Johns</h1>
         <nav>
             <ul class= "links">
-                <li><a href= "placeholder">About Me</a></li>
-                <li><a href = "placeholder">Portfolio</a></li>
-                <li><a href = "placeholder">Contact</a></li>
+                <li><a href= "#about-me">About Me</a></li>
+                <li><a href = "#horiseon">Work</a></li>
+                <li><a href = "#contact-info">Contact</a></li>
             </ul>
           </nav>
     </header>
     <aside>
         <img src="assets/images/Headshot.JPG" id= "headshot">
-          <figcaption>This is me, I'm wearing a suit.</figcaption>
     </aside>
+    <article>
+      <section id= "about-me">
+        <h2>About Me</h2>
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad tempora eos laudantium facilis nesciunt cumque dolorem modi totam! Omnis amet blanditiis optio voluptatum quaerat voluptates mollitia architecto consequuntur quod veniam Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, maxime pariatur odit cum delectus eos rem nisi atque totam hic. Rerum et eos alias cumque ratione expedita autem magnam dignissimos Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus perspiciatis recusandae cum ea, voluptatum nam laborum ipsa porro sapiente esse quas magni aliquam praesentium modi voluptate! A quas labore itaque.</p>
+      </section>  
+      <section id= "horiseon">
+        <h2>Horiseon Digital Marketing</h2>
+        <img src="assets/images/camera.JPG" alt="placeholder">
+      </section>
+    </article>
     <main>
-        <section id= "Horiseon">
-            <h2>Horiseon Digital Marketing</h2>
-<!-- most recent work is larger than following boxes -->
+        <section class= "work">
+          <img src="assets/images/camera.JPG" alt= "placeholder"> 
         </section>
- <!-- Four remaining sections are one class.  -->
-        <section class= "portfolio">
+        <section class= "work">
+          <img src="assets/images/tablet.jpg" alt= "placeholder">  
         </section>
-        <section class= "portfolio">
+        <section class= "work">
+          <img src="assets/images/toilet-paper.jpg" alt= "placeholder"> 
         </section>
-        <section class= "portfolio">
-        </section>
-        <section class= "portfolio">
+        <section class= "work">
+          <img src="assets/images/wooden-spoons.jpg" alt= "placeholder"> 
         </section>
     </main>
-    <footer>
-        <!-- ToDo: add contact info here. Include Form?-->
+    <footer id = "contact-info">
+        <!-- ToDo: add contact info here. Include Form? -->
+        <ul>
+          <li>email: nelsontjohns@gmail.com</li>
+          <li>phone: 555-5555</li>
+        </ul>
+
     </footer>
   </body>

@@ -16,6 +16,7 @@ h1 {
 body {
   font-family: sans-serif;
   margin: 0;
+
 }
 
 header {
@@ -50,26 +51,34 @@ nav a {
   text-align: center;
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 aside {
   display: flex;
-  flex-direction: column;
   width: 20%;
-  height: fit-content;
 }
 
-article {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
-#headshot {
+#headshot img {
   border-style: solid;
   border-width: 1px;
   border-radius: 10px;
   padding: 10px;
-  width: 100%;
-  flex: 0 0 400px;
+  width: 50%;
+  flex: 0 0 200px;
+}
+
+section {
+  display: flex;
+  width: 80%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#horiseon {
+  justify-content: center;
 }
 
 #horisoen h2 {
@@ -80,12 +89,8 @@ article {
   justify-content: center;
 }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .work {
+  flex-wrap: wrap;
   width: 50%;
   flex: 0 0 400px;
 }

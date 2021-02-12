@@ -3,58 +3,62 @@
 
 
 <!-- ToDo: refer to csstricks.com example to get responsive layout correct. -->
-<!-- For the layout: aside needs to come first inside main. then all objects to the right of the column need to be in one big parent container. refer to first example on css tricks to figure out how to get one box to disply out of row. Also refer to 06 from advanced CCs, it has a similar layout. -->
-  <head>
-    <title>Nelson Johns</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
-  </head>
-  <body>
-    <header>
-        <h1>Nelson Johns</h1>
-        <nav>
-            <ul class= "links">
-                <li><a href= "#about-me">About Me</a></li>
-                <li><a href = "#horiseon">Work</a></li>
-                <li><a href = "#contact-info">Contact</a></li>
-            </ul>
-          </nav>
-    </header>
-    <aside>
+<!-- For the layout: aside needs to come after main. then all objects to the right of the column need to be in one big parent container. refer to first example on css tricks to figure out how to get one box to disply out of row. Also refer to 06 from advanced CCs, it has a similar layout. -->
+<head>
+  <title>Nelson Johns</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Nelson Johns</h1>
+    <nav>
+      <ul class= "links">
+        <li><a href= "#about-me">About Me</a></li>
+        <li><a href = "#horiseon">Work</a></li>
+        <li><a href = "#contact-info">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <aside class= "aside-1">
+      <div id= "headshot">
         <img src="assets/images/Headshot.JPG" id= "headshot">
+      </div>
+      <h2>About Me</h2>
+      </aside>
+    <section id= "about-me">
+          <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad tempora eos laudantium facilis nesciunt cumque dolorem modi totam! Omnis amet blanditiis optio voluptatum quaerat voluptates mollitia architecto consequuntur quod veniam Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, maxime pariatur odit cum delectus eos rem nisi atque totam hic. Rerum et eos alias cumque ratione expedita autem magnam dignissimos Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus perspiciatis recusandae cum ea, voluptatum nam laborum ipsa porro sapiente esse quas magni aliquam praesentium modi voluptate! A quas labore itaque.</p>
+    </section>  
+    <aside>
+        <h2>work</h2>
     </aside>
-    <article>
-      <section id= "about-me">
-        <h2>About Me</h2>
-        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad tempora eos laudantium facilis nesciunt cumque dolorem modi totam! Omnis amet blanditiis optio voluptatum quaerat voluptates mollitia architecto consequuntur quod veniam Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, maxime pariatur odit cum delectus eos rem nisi atque totam hic. Rerum et eos alias cumque ratione expedita autem magnam dignissimos Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus perspiciatis recusandae cum ea, voluptatum nam laborum ipsa porro sapiente esse quas magni aliquam praesentium modi voluptate! A quas labore itaque.</p>
-      </section>  
-      <section id= "horiseon">
-        <h2>Horiseon Digital Marketing</h2>
+    <section id= "section-2">
+      <div id= "horiseon">
         <img src="assets/images/camera.JPG" alt="placeholder">
-      </section>
-    </article>
-    <main>
-        <section class= "work">
-          <img src="assets/images/camera.JPG" alt= "placeholder"> 
-        </section>
-        <section class= "work">
-          <img src="assets/images/tablet.jpg" alt= "placeholder">  
-        </section>
-        <section class= "work">
-          <img src="assets/images/toilet-paper.jpg" alt= "placeholder"> 
-        </section>
-        <section class= "work">
-          <img src="assets/images/wooden-spoons.jpg" alt= "placeholder"> 
-        </section>
-    </main>
-    <footer id = "contact-info">
-        <!-- ToDo: add contact info here. Include Form? -->
-        <ul>
-          <li>email: nelsontjohns@gmail.com</li>
-          <li>phone: 555-5555</li>
-        </ul>
+      </div>
+      <div class= "work">
+        <img src="assets/images/camera.JPG" alt= "placeholder"> 
+      </div>
+      <div class= "work">
+         <img src="assets/images/tablet.jpg" alt= "placeholder">  
+      </div>
+      <div class= "work">
+        <img src="assets/images/toilet-paper.jpg" alt= "placeholder"> 
+      </div>
+      <div class= "work">
+        <img src="assets/images/wooden-spoons.jpg" alt= "placeholder"> 
+      </div>
+    </section>
+  </main>
+  <footer id = "contact-info">
+    <!-- ToDo: add contact info here. Include Form? -->
+    <ul>
+      <li>email: nelsontjohns@gmail.com</li>
+      <li>phone: 555-5555</li>
+    </ul>
 
     </footer>
   </body>

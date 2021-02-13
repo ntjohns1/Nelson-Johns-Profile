@@ -8,4 +8,6 @@ Then they are taken to that deployed application.
 When they resize the page or view the site on various screens and devices.
 Then they are presented with a responsive design that adapts to their viewport.
 
+https://ntjohns1.github.io/Nelson-Johns-Profile/
+
 ![image](https://user-images.githubusercontent.com/77765270/107842378-bf789100-6d90-11eb-9b5d-7d06bddab49c.png)

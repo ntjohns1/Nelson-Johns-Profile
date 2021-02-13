@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 </head>
 <body>
+<!-- Header switches to column flex-direction on smaller screens -->
   <header>
     <h1>Nelson Johns</h1>
     <nav>
@@ -19,18 +20,21 @@
     </nav>
   </header>
   <main>
+<!-- Aside boxes are aligned to the left to appear as a single column displaying the section title on larger and mid-size screens. On smaller mobile devices, they appear as a mini-header above section. -->
     <aside>
       <h2>About Me</h2>
     </aside>
-    <section id= "about-me">
-      <img src="assets/images/Headshot.JPG" id= "headshot">
+<!-- Short bio and headshot. -->
+    <section class= "about-me">
+      <img src="assets/images/Headshot.JPG">
       <p> I  grew up in Indianapolis, Indiana,  and I  moved to Durham, NC in 2013. I  started my career in music, obtaining undergraduate and graduate degrees for jazz studies in guitar. The pandemic of 2020 inspired me to change careers, and I am currently enrolled in the UNC Coding Bootcamp in the full stack program. I am embarking on learning JavaScript at the moment. I am particularly interested in learning more about careers in back end web development, and I am looking forward to learning more about SQL and Python. I am also interested in data analytics, but I  want to further explore careers in tech before I  commit to any particular direction. When I’m not coding I also teach guitar lessons and I  bartend on the weekends. I currently reside in Durham with a part-time roommate and my cat Clementine.</p>
     </section>  
     <aside>
       <h2>work</h2>
     </aside>
+<!-- Portfolio section with screenshots as links. -->
     <section id= "section-2">
-      <div id= "horiseon">
+      <div class= "horiseon">
         <h3>Horiseon Digital Marketing Code Refactor</h3>
         <a href="https://ntjohns1.github.io/Horiseon/">
           <img src="assets/images/Horiseon.jpg" alt="Horiseon Digital Marketing">
@@ -61,6 +65,7 @@
         </a>
       </div>
     </section>
+<!-- Footer with contact info. -->
     <aside>
       <h2>Contact</h2>
     </aside>

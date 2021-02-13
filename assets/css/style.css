@@ -1,3 +1,4 @@
+/* Scroll behavior set to 'smooth' so navlinks scroll to each section. */
 * {
     box-sizing: border-box;
     line-height: 1.5;
@@ -7,10 +8,10 @@
 
 body {
   font-family: sans-serif;
-  margin: 0;8
-
+  margin: 0;
 }
 
+/* Header Styling */
 header {
   margin-bottom: 20px;
   display: flex;
@@ -22,6 +23,7 @@ header {
   color: #E7F0F3;
 }
 
+/* Title box with name. */
 h1 {
   background-color: #121D32;
   font-size: 46pt;
@@ -29,6 +31,7 @@ h1 {
   align-items: flex-start;
 }
 
+/* Navlinks */
 nav ul {
   display: flex;
   margin: 10px;
@@ -59,11 +62,13 @@ nav a {
   background-color: #648AB1;
 }
 
+/* Sets parent container for main body of page to flex layout. */
 main {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* Width set to %20 to make aside boxes appear as a single column. */
 aside {
   display: flex;
   width: 20%;
@@ -74,11 +79,12 @@ aside {
   border-right: 5px solid #121D32
 }
 
-#about-me {
+/* Styling for bio section. */
+.about-me {
   justify-content: space-around;
 }
 
-#about-me img {
+.about-me img {
   border-style: solid;
   border-width: 1px;
   border-radius: 10px;
@@ -88,14 +94,16 @@ aside {
   flex: 0 0;
 }
 
-#about-me p {
+.about-me p {
   max-width: 60%;
 }
 
+/* Makes section titles move toward the right side of the container. */
 aside h2 {
   justify-content: flex-end;
 }
 
+/* Sets Styling for section boxes. Set to 80% width so they will load next to aside box with appropriate title. */
 section {
   display: flex;
   width: 80%;
@@ -104,21 +112,19 @@ section {
   justify-content: space-evenly;
 }
 
-section ul {
-  padding: 10px;
-}
-
-#horiseon {
+/* Makes the most recent portfolio entry  appear larger. */
+.horiseon {
   justify-content: space-evenly;
   padding: 5px;
   margin: 20px;
 }
 
-#horiseon img {
+.horiseon img {
   max-width: 100%;
   flex: 2 0 auto;
 }
 
+/* Container for portfolio links. */
 .work {
   flex-wrap: wrap;
   width: 50%;
@@ -132,6 +138,7 @@ section ul {
   z-index: -1;
 }
 
+/* On medium-sized screens the left-hand column will be smaller, and the navlinks appear under the title in the heder. */
 @media screen and (max-width: 768px) {
   header {
     flex-direction: column;
@@ -155,6 +162,7 @@ section ul {
     width: 90%
   }
 
+/* On smaller devices, the flex direction is set to column in the <main> container to make the aside cards appear as small headers above their respective sections. The links in the portfolio section will appear in one column instead of two. */
 @media screen and (max-width: 576px) {
   main {
     flex-direction: column;
